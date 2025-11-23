@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Contact from '@/components/shared/Contact';
 import HeroSection from '@/components/features/HeroSection';
+import AudioPlayer from '@/components/features/AudioPlayer';
 
 export const metadata: Metadata = {
   title: 'Ke stažení | ACbleskDC',
@@ -17,22 +18,19 @@ export default function KeStazeniPage() {
             {/* MP3 a video Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 text-white">MP3 a video</h2>
-              <div className="space-y-3 text-gray-300 mb-8">
-                <p className="text-lg">
-                  <a href="/downloads/Hells bells.mp3" className="text-white hover:text-acdc-red transition-colors underline">
-                    Hells Bells
-                  </a>
-                </p>
-                <p className="text-lg">
-                  <a href="/downloads/Highway to hell.mp3" className="text-white hover:text-acdc-red transition-colors underline">
-                    Highway to Hell
-                  </a>
-                </p>
-                <p className="text-lg">
-                  <a href="/downloads/You shook me all night long.mp3" className="text-white hover:text-acdc-red transition-colors underline">
-                    You Shook me all Night long
-                  </a>
-                </p>
+              <div className="mb-8">
+                <AudioPlayer
+                  src="/downloads/Hells bells.mp3"
+                  title="Hells Bells"
+                />
+                <AudioPlayer
+                  src="/downloads/Highway to hell.mp3"
+                  title="Highway to Hell"
+                />
+                <AudioPlayer
+                  src="/downloads/You shook me all night long.mp3"
+                  title="You Shook me all Night long"
+                />
               </div>
 
               {/* YouTube Videos */}
