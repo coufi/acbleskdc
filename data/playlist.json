@@ -1,83 +1,83 @@
 [
   {
     "id": "1",
-    "title": "Highway to Hell",
-    "originalArtist": "AC/DC",
-    "album": "Highway to Hell",
-    "year": 1979,
-    "category": "classics"
+    "title": "Back In Black"
   },
   {
     "id": "2",
-    "title": "Back in Black",
-    "originalArtist": "AC/DC",
-    "album": "Back in Black",
-    "year": 1980,
-    "category": "classics"
+    "title": "Big Gun"
   },
   {
     "id": "3",
-    "title": "Thunderstruck",
-    "originalArtist": "AC/DC",
-    "album": "The Razors Edge",
-    "year": 1990,
-    "category": "classics"
+    "title": "Dirty Deeds Done Dirt Cheap"
   },
   {
     "id": "4",
-    "title": "T.N.T.",
-    "originalArtist": "AC/DC",
-    "album": "T.N.T.",
-    "year": 1975,
-    "category": "classics"
+    "title": "For Those Hard as a rock (We Salute You)"
   },
   {
     "id": "5",
-    "title": "You Shook Me All Night Long",
-    "originalArtist": "AC/DC",
-    "album": "Back in Black",
-    "year": 1980,
-    "category": "classics"
+    "title": "Hard as a rock"
   },
   {
     "id": "6",
-    "title": "Hells Bells",
-    "originalArtist": "AC/DC",
-    "album": "Back in Black",
-    "year": 1980,
-    "category": "classics"
+    "title": "Hells Bells"
   },
   {
     "id": "7",
-    "title": "Shoot to Thrill",
-    "originalArtist": "AC/DC",
-    "album": "Back in Black",
-    "year": 1980,
-    "category": "classics"
+    "title": "Highway to hell"
   },
   {
     "id": "8",
-    "title": "Dirty Deeds Done Dirt Cheap",
-    "originalArtist": "AC/DC",
-    "album": "Dirty Deeds Done Dirt Cheap",
-    "year": 1976,
-    "category": "classics"
+    "title": "Nick of Time"
   },
   {
     "id": "9",
-    "title": "Rock and Roll Ain't Noise Pollution",
-    "originalArtist": "AC/DC",
-    "album": "Back in Black",
-    "year": 1980,
-    "category": "classics"
+    "title": "Problem Child"
   },
   {
     "id": "10",
-    "title": "For Those About to Rock (We Salute You)",
-    "originalArtist": "AC/DC",
-    "album": "For Those About to Rock We Salute You",
-    "year": 1981,
-    "category": "classics"
+    "title": "Rock Or Bust"
+  },
+  {
+    "id": "11",
+    "title": "Shoot to Thrill"
+  },
+  {
+    "id": "12",
+    "title": "That's the way I wanna Rock 'n' Roll"
+  },
+  {
+    "id": "13",
+    "title": "The razors edge"
+  },
+  {
+    "id": "14",
+    "title": "The Jack"
+  },
+  {
+    "id": "15",
+    "title": "Thunderstruck"
+  },
+  {
+    "id": "16",
+    "title": "T.N.T."
+  },
+  {
+    "id": "17",
+    "title": "Touch Too Much"
+  },
+  {
+    "id": "18",
+    "title": "War Machine"
+  },
+  {
+    "id": "19",
+    "title": "Whole lotta rosie"
+  },
+  {
+    "id": "20",
+    "title": "You Shook Me All Night Long"
   }
 ]
 

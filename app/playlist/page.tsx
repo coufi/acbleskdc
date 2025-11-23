@@ -1,37 +1,38 @@
 import type { Metadata } from 'next';
-import { getPlaylist } from '@/lib/data/repository';
+import Contact from '@/components/shared/Contact';
+import HeroSection from '@/components/features/HeroSection';
 import PlaylistTable from '@/components/features/PlaylistTable';
+import playlistData from '@/data/playlist.json';
 
 export const metadata: Metadata = {
   title: 'Playlist | ACbleskDC',
   description: 'Repertoár písní tribute skupiny ACbleskDC',
 };
 
-// Revalidate every 24 hours
-export const revalidate = 86400;
-
-export default async function PlaylistPage() {
-  const playlist = await getPlaylist();
-
+export default function PlaylistPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8 text-acdc-red">Playlist</h1>
+    <div className="homepage-wrapper">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Main Content - Left Column */}
+          <div className="lg:w-2/3">
+            {/* Playlist Section */}
+            <section className="mb-12">
+              <h1 className="text-4xl font-bold mb-8 text-white uppercase">Playlist</h1>
+              <PlaylistTable songs={playlistData} />
+            </section>
 
-      <div className="mb-6">
-        <p className="text-lg leading-relaxed">
-          Náš repertoár obsahuje ty nejlepší hity AC/DC. Na koncertech hrajeme
-          energickou směs klasických hitů, které roztančí každého fanouška rocku!
-        </p>
-      </div>
+            {/* Hero Section with next concert */}
+            <HeroSection />
+          </div>
 
-      <PlaylistTable songs={playlist} />
-
-      <div className="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-        <h2 className="text-xl font-bold mb-4">Máte speciální požadavek?</h2>
-        <p className="leading-relaxed">
-          Kontaktujte nás, pokud máte speciální požadavek na písničku pro vaši akci.
-          Rádi rozšíříme náš repertoár podle vašich přání!
-        </p>
+          {/* Sidebar - Right Column */}
+          <aside className="lg:w-1/3">
+            <div className="bg-black/50 p-6 rounded-lg border-t border-b border-gray-500 shadow-xl">
+              <Contact />
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
   );
