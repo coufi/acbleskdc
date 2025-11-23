@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Contact from '@/components/shared/Contact';
 import HeroSection from '@/components/features/HeroSection';
 import AudioPlayer from '@/components/features/AudioPlayer';
+import LogoGallery from '@/components/features/LogoGallery';
 
 export const metadata: Metadata = {
   title: 'Ke stažení | ACbleskDC',
@@ -68,26 +69,7 @@ export default function KeStazeniPage() {
             {/* Logo Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 text-white">Logo</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <a href="/images/logo/1acbleskdc.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/1acbleskdc-small.png" alt="ACbleskDC Logo 1" className="w-full h-auto scale-80" />
-                </a>
-                <a href="/images/logo/2acbleskdc.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/2acbleskdc-small.png" alt="ACbleskDC Logo 2" className="w-full h-auto scale-80" />
-                </a>
-                <a href="/images/logo/3acbleskdc.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/3acbleskdc-small.png" alt="ACbleskDC Logo 3" className="w-full h-auto scale-80" />
-                </a>
-                <a href="/images/logo/4acbleskdc.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/4acbleskdc-small.png" alt="ACbleskDC Logo 4" className="w-full h-auto scale-80" />
-                </a>
-                <a href="/images/logo/acbleskdc-logo.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/acbleskdc-logo-small.png" alt="ACbleskDC Logo 5" className="w-full h-auto scale-80" />
-                </a>
-                <a href="/images/logo/acbleskdc.png" target="_blank" className="bg-white p-4 rounded-lg hover:shadow-xl transition-shadow">
-                  <img src="/images/logo/acbleskdc-small.png" alt="ACbleskDC Logo 6" className="w-full h-auto scale-80" />
-                </a>
-              </div>
+              <LogoGallery />
             </section>
 
             {/* Hero Section with next concert */}
