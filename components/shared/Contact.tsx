@@ -24,7 +24,14 @@ export default function Contact() {
               clipRule="evenodd" 
             />
           </svg>
-          Letovice
+          <a
+            href="https://www.google.com/maps/place/Letovice/@49.5461,16.5739,13z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-acdc-red transition-colors"
+          >
+            Letovice
+          </a>
         </span>
 
         <span className="contact-phone flex items-center text-gray-300">
@@ -39,7 +46,7 @@ export default function Contact() {
           </svg>
           <a 
             href="tel:+420606781310" 
-            className="text-cyan-400 hover:text-cyan-300 transition-colors"
+            className="text-white hover:text-acdc-red transition-colors"
           >
             606 781 310
           </a>
@@ -52,7 +59,7 @@ export default function Contact() {
             viewBox="0 0 20 20"
           >
             <path 
-              d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" 
+              d="M2.003 5.884L10 9.882l7.997-3-998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
             />
             <path 
               d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" 
@@ -60,7 +67,7 @@ export default function Contact() {
           </svg>
           <a 
             href="mailto:acbleskdcletovice@seznam.cz" 
-            className="text-cyan-400 hover:text-cyan-300 transition-colors break-all"
+            className="text-white hover:text-acdc-red transition-colors break-all"
           >
             acbleskdcletovice@seznam.cz
           </a>
