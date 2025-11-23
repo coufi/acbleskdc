@@ -51,7 +51,7 @@ export default function HomePage() {
                   <img
                     src="/images/facebook-icon.jpg"
                     alt="Facebook"
-                    className="h-12 border-2 border-orange-500 rounded"
+                    className="h-12 rounded"
                   />
                 </a>
                 <a
