@@ -17,10 +17,15 @@ export default function Header() {
     <header className="bg-acdc-black text-white shadow-md">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-acdc-red">
-              ACbleskDC
-            </div>
+          <Link href="/" className="flex flex-col items-start space-y-1">
+            <img
+              src="/images/acbleskdc-logo.png"
+              alt="ACbleskDC"
+              className="h-12 w-auto"
+            />
+            <p className="text-sm text-gray-400 font-normal tracking-wide">
+              Revival světoznámé kapely AC/DC z Letovic.
+            </p>
           </Link>
 
           {/* Desktop Navigation */}
