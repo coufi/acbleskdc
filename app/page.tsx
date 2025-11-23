@@ -4,6 +4,17 @@ export default function HomePage() {
   return (
     <div className="homepage-wrapper">
       <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Band Photo Hero */}
+        <div className="mb-8">
+          <div className="relative overflow-hidden rounded-lg shadow-2xl border-4 border-gray-700">
+            <img
+              src="/images/20200530DSC_2158_RaHan_foto.jpg"
+              alt="ACbleskDC - Revival kapela AC/DC"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content - Left Column */}
           <div className="lg:w-2/3">
