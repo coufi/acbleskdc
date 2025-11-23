@@ -1,0 +1,21 @@
+# Development Dockerfile with dependency caching
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy only dependency files first for better caching
+COPY package.json package-lock.json* ./
+
+# Install dependencies - this layer will be cached unless package files change
+RUN npm install
+
+# Copy the rest of the application
+# This is done after npm install so changes to source code don't invalidate the dependency cache
+COPY . .
+
+# Expose Next.js dev server port
+EXPOSE 3000
+
+# Start development server with hot reload
+CMD ["npm", "run", "dev"]
+

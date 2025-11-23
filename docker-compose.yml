@@ -4,14 +4,29 @@ services:
   acbleskdc-web:
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: acbleskdc-web
+      dockerfile: Dockerfile.dev
+    container_name: acbleskdc-web-dev
     restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
       - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      # Mount source code for hot reload
+      - ./app:/app/app
+      - ./components:/app/components
+      - ./lib:/app/lib
+      - ./types:/app/types
+      - ./data:/app/data
+      - ./public:/app/public
+      - ./next.config.ts:/app/next.config.ts
+      - ./tailwind.config.ts:/app/tailwind.config.ts
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./postcss.config.mjs:/app/postcss.config.mjs
+      # Prevent node_modules from being mounted (keep container version)
+      - /app/node_modules
+      - /app/.next
     networks:
       - acbleskdc-network
     healthcheck:
