@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "title": "ACbleskDC v Rock Café",
+    "date": "2024-12-15",
+    "time": "20:00",
+    "venue": "Rock Café",
+    "city": "Praha",
+    "address": "Národní 20, 110 00 Praha 1",
+    "ticketUrl": "https://example.com/tickets",
+    "status": "upcoming"
+  },
+  {
+    "id": "2",
+    "title": "Silvestrovský večer s ACbleskDC",
+    "date": "2024-12-31",
+    "time": "21:00",
+    "venue": "Kulturní dům",
+    "city": "Brno",
+    "address": "Josefská 12, 602 00 Brno",
+    "status": "upcoming"
+  },
+  {
+    "id": "3",
+    "title": "ACbleskDC - Tribute show",
+    "date": "2024-10-28",
+    "time": "19:30",
+    "venue": "Music Club",
+    "city": "Ostrava",
+    "status": "past"
+  }
+]
+

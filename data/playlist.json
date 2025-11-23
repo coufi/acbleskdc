@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "title": "Highway to Hell",
+    "originalArtist": "AC/DC",
+    "album": "Highway to Hell",
+    "year": 1979,
+    "category": "classics"
+  },
+  {
+    "id": "2",
+    "title": "Back in Black",
+    "originalArtist": "AC/DC",
+    "album": "Back in Black",
+    "year": 1980,
+    "category": "classics"
+  },
+  {
+    "id": "3",
+    "title": "Thunderstruck",
+    "originalArtist": "AC/DC",
+    "album": "The Razors Edge",
+    "year": 1990,
+    "category": "classics"
+  },
+  {
+    "id": "4",
+    "title": "T.N.T.",
+    "originalArtist": "AC/DC",
+    "album": "T.N.T.",
+    "year": 1975,
+    "category": "classics"
+  },
+  {
+    "id": "5",
+    "title": "You Shook Me All Night Long",
+    "originalArtist": "AC/DC",
+    "album": "Back in Black",
+    "year": 1980,
+    "category": "classics"
+  },
+  {
+    "id": "6",
+    "title": "Hells Bells",
+    "originalArtist": "AC/DC",
+    "album": "Back in Black",
+    "year": 1980,
+    "category": "classics"
+  },
+  {
+    "id": "7",
+    "title": "Shoot to Thrill",
+    "originalArtist": "AC/DC",
+    "album": "Back in Black",
+    "year": 1980,
+    "category": "classics"
+  },
+  {
+    "id": "8",
+    "title": "Dirty Deeds Done Dirt Cheap",
+    "originalArtist": "AC/DC",
+    "album": "Dirty Deeds Done Dirt Cheap",
+    "year": 1976,
+    "category": "classics"
+  },
+  {
+    "id": "9",
+    "title": "Rock and Roll Ain't Noise Pollution",
+    "originalArtist": "AC/DC",
+    "album": "Back in Black",
+    "year": 1980,
+    "category": "classics"
+  },
+  {
+    "id": "10",
+    "title": "For Those About to Rock (We Salute You)",
+    "originalArtist": "AC/DC",
+    "album": "For Those About to Rock We Salute You",
+    "year": 1981,
+    "category": "classics"
+  }
+]
+
