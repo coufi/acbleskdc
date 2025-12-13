@@ -1,13 +1,32 @@
-export default function HeroSection() {
+import { getNextConcert } from '@/lib/data/repository';
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('cs-CZ', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  });
+}
+
+export default async function HeroSection() {
+  const nextConcert = await getNextConcert();
+
   return (
     <section className="text-center mb-8">
       <div className="mb-8">
         <h4 className="text-2xl font-bold text-white mb-8 uppercase tracking-wide">
           Nejbližší vystoupení
         </h4>
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-white font-sans">
-          6.12.2025 - Rabínův šenk - Boskovice
-        </h1>
+        {nextConcert ? (
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-white font-sans">
+            {formatDate(nextConcert.date)} - {nextConcert.description}
+          </h1>
+        ) : (
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-white font-sans">
+            Žádné plánované vystoupení
+          </h1>
+        )}
       </div>
 
       {/* Animated GIF Section */}

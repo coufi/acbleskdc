@@ -24,6 +24,11 @@ export async function getUpcomingConcerts(): Promise<Concert[]> {
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
+export async function getNextConcert(): Promise<Concert | null> {
+  const upcomingConcerts = await getUpcomingConcerts();
+  return upcomingConcerts.length > 0 ? upcomingConcerts[0] : null;
+}
+
 export async function getPastConcerts(): Promise<Concert[]> {
   const concerts = await getConcerts();
   const now = new Date();
