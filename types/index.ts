@@ -1,13 +1,7 @@
 export interface Concert {
   id: string;
-  title: string;
   date: string;
-  time: string;
-  venue: string;
-  city: string;
-  address?: string;
-  ticketUrl?: string;
-  status: 'upcoming' | 'past' | 'cancelled';
+  description: string;
 }
 
 export interface Song {

@@ -19,7 +19,7 @@ export async function getUpcomingConcerts(): Promise<Concert[]> {
   return concerts
     .filter((concert) => {
       const concertDate = new Date(concert.date);
-      return concert.status === 'upcoming' && concertDate >= now;
+      return concertDate >= now;
     })
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
@@ -30,7 +30,7 @@ export async function getPastConcerts(): Promise<Concert[]> {
   return concerts
     .filter((concert) => {
       const concertDate = new Date(concert.date);
-      return concert.status === 'past' || concertDate < now;
+      return concertDate < now;
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
