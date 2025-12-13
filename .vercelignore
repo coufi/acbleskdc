@@ -1,0 +1,35 @@
+# Docker files - not needed for Vercel deployment
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+docker-compose.prod.yml
+nginx.conf
+
+# Documentation
+DEPLOYMENT.md
+README.md
+
+# Development files
+.git
+.gitignore
+.env.local
+.env.development
+.env.*.local
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Test files
+__tests__
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Other
+.DS_Store
+Thumbs.db
+
