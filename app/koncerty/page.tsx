@@ -2,14 +2,18 @@ import type { Metadata } from 'next';
 import Contact from '@/components/shared/Contact';
 import HeroSection from '@/components/features/HeroSection';
 import ConcertList from '@/components/features/ConcertList';
-import concertsData from '@/data/concerts.json';
+import { getConcerts } from '@/lib/data/repository';
 
 export const metadata: Metadata = {
   title: 'Koncerty | ACbleskDC',
   description: 'Přehled koncertů tribute skupiny ACbleskDC',
 };
 
-export default function KoncertyPage() {
+export const dynamic = 'force-dynamic';
+
+export default async function KoncertyPage() {
+  const concerts = await getConcerts();
+
   return (
     <div className="homepage-wrapper">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -18,7 +22,7 @@ export default function KoncertyPage() {
           <div className="lg:w-2/3">
             {/* Koncerty seznam */}
             <section className="mb-12">
-              <ConcertList concerts={concertsData} />
+              <ConcertList concerts={concerts} />
             </section>
 
             {/* Hero Section with next concert */}
@@ -36,4 +40,3 @@ export default function KoncertyPage() {
     </div>
   );
 }
-

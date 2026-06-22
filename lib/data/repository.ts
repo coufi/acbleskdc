@@ -1,4 +1,5 @@
 import { Concert, Song, Download } from '@/types';
+import { unstable_noStore as noStore } from 'next/cache';
 import concertsData from '@/data/concerts.json';
 import playlistData from '@/data/playlist.json';
 
@@ -9,8 +10,8 @@ import playlistData from '@/data/playlist.json';
 
 // Concert repository
 export async function getConcerts(): Promise<Concert[]> {
-  // Simulate async operation (future API call)
-  return Promise.resolve(concertsData as Concert[]);
+  noStore();
+  return concertsData as Concert[];
 }
 
 export async function getUpcomingConcerts(): Promise<Concert[]> {
@@ -65,4 +66,3 @@ export async function getDownloads(): Promise<Download[]> {
   // TODO: Implement when downloads data is available
   return Promise.resolve([]);
 }
-

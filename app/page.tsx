@@ -1,6 +1,8 @@
 import Contact from '@/components/shared/Contact';
 import HeroSection from '@/components/features/HeroSection';
 
+export const dynamic = 'force-dynamic';
+
 export default function HomePage() {
   return (
     <div className="homepage-wrapper">
@@ -58,4 +60,3 @@ export default function HomePage() {
     </div>
   );
 }
-
