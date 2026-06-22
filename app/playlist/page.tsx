@@ -2,14 +2,16 @@ import type { Metadata } from 'next';
 import Contact from '@/components/shared/Contact';
 import HeroSection from '@/components/features/HeroSection';
 import PlaylistTable from '@/components/features/PlaylistTable';
-import playlistData from '@/data/playlist.json';
+import { getPlaylist } from '@/lib/data/repository';
 
 export const metadata: Metadata = {
   title: 'Playlist | ACbleskDC',
   description: 'Repertoár písní tribute skupiny ACbleskDC',
 };
 
-export default function PlaylistPage() {
+export default async function PlaylistPage() {
+  const songs = await getPlaylist();
+
   return (
     <div className="homepage-wrapper">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -19,7 +21,7 @@ export default function PlaylistPage() {
             {/* Playlist Section */}
             <section className="mb-12">
               <h1 className="text-4xl font-bold mb-8 text-white uppercase">Playlist</h1>
-              <PlaylistTable songs={playlistData} />
+              <PlaylistTable songs={songs} />
             </section>
 
             {/* Hero Section with next concert */}
@@ -37,4 +39,3 @@ export default function PlaylistPage() {
     </div>
   );
 }
-

@@ -48,7 +48,9 @@ export async function getConcertById(id: string): Promise<Concert | null> {
 
 // Playlist repository
 export async function getPlaylist(): Promise<Song[]> {
-  return Promise.resolve(playlistData as Song[]);
+  return [...(playlistData as Song[])].sort((a, b) =>
+    a.title.localeCompare(b.title, 'en', { sensitivity: 'base' })
+  );
 }
 
 export async function getPlaylistByCategory(category: string): Promise<Song[]> {
